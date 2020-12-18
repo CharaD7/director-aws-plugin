@@ -44,7 +44,7 @@
         <jsr305.version>2.0.2</jsr305.version>
         <mockito.version>1.10.19</mockito.version>
         <slf4j.version>1.7.5</slf4j.version>
-        <spring.version>4.1.5.RELEASE</spring.version>
+        <spring.version>4.3.29.RELEASE</spring.version>
         <typesafe-config.version>1.2.0</typesafe-config.version>
         <shade-prefix>com.cloudera.director.aws.shaded</shade-prefix>
         <maven-checkstyle-plugin.version>2.13</maven-checkstyle-plugin.version>
@@ -242,8 +242,7 @@
                         </relocation>
                     </relocations>
                     <transformers>
-                        <transformer
-                            implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+                        <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
                     </transformers>
                 </configuration>
                 <executions>
